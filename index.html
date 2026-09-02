@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeRobot 2D PushT Teleop Simulator - HWIHWA LAB</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navigation / Brand Header -->
+  <header>
+    <div class="brand">
+      <div class="brand-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="7" width="20" height="14" rx="3.5" fill="#0a0f19" />
+          <circle cx="7.5" cy="14" r="2.2" fill="#00f2fe" />
+          <circle cx="16.5" cy="14" r="2.2" fill="#00f2fe" />
+          <line x1="12" y1="2" x2="12" y2="7" stroke="#0a0f19" stroke-width="2" stroke-linecap="round" />
+          <circle cx="12" cy="2" r="1.8" fill="#00f2fe" />
+        </svg>
+      </div>
+      <div>
+        <div class="brand-title">LeRobot 2D PushT Teleop Simulator</div>
+        <div style="font-size: 0.72rem; color: var(--text-muted);">Real-time Mouse Teleoperation & Demonstration Data Collector | HWIHWA LAB</div>
+      </div>
+      <span class="brand-badge">v2.0 Live</span>
+    </div>
+
+    <div class="header-status">
+      <div class="status-item" id="engineStatusBadge">
+        <span class="status-dot"></span>
+        <span>Python FastAPI Backend (WebSocket 60Hz)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Bento Grid Container -->
+  <main>
+    <!-- Left Column: Simulation Canvas & Teleop Controls -->
+    <section class="sim-container card">
+      <div class="canvas-wrapper">
+        <canvas id="simCanvas" width="512" height="420"></canvas>
+        <div class="canvas-overlay">
+          <div class="overlay-badge mode-pill" id="modePill">MODE: TELEOP (Press 'M')</div>
+          <div class="overlay-badge" style="color: var(--text-muted);">Goal: 256, 256 (0°)</div>
+        </div>
+        <div class="pause-overlay" id="pauseOverlay" style="display: none;">
+          <div class="pause-box">
+            <span style="font-size: 1.5rem;">⏸️</span>
+            <span>SIMULATION PAUSED</span>
+            <span style="font-size: 0.72rem; color: var(--accent-cyan);">Press [Space] to Resume</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Toolbar (Indicator Dot Style) -->
+      <div class="teleop-toolbar">
+        <button id="btnReset" class="btn btn-secondary" title="Press [R] to Reset"><span class="btn-dot dot-gray"></span>Reset</button>
+        <button id="btnRecord" class="btn btn-record" title="Press [S] to Record"><span class="btn-dot dot-red"></span>Record</button>
+        <button id="btnAi" class="btn btn-ai" title="Press [M] to Toggle AI"><span class="btn-dot dot-purple"></span>Autopilot</button>
+        <button id="btnExport" class="btn btn-primary"><span class="btn-dot dot-cyan"></span>Export</button>
+      </div>
+    </section>
+
+    <!-- Right Column: Telemetry, Instructions & Recorded Datasets -->
+    <section class="dashboard-grid">
+      
+      <!-- High-Tech HUD Metrics Overview with RL Rewards -->
+      <div class="card metrics-panel">
+        <div class="metrics-row">
+          
+          <!-- Card 1: Goal Coverage & Step Reward -->
+          <div class="metric-card" id="cardCoverage">
+            <div class="metric-header">
+              <span class="metric-label">Goal Coverage</span>
+              <span class="metric-badge" id="peakBadge">Peak 0%</span>
+            </div>
+            <div class="metric-value cyan" id="coverageVal">0%</div>
+            <div class="metric-sub-text" id="metricReward">Reward: +0.0000</div>
+            <div class="progress-container">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+          </div>
+
+          <!-- Card 2: Episode Frames & Cumulative Return -->
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">Episode Frames</span>
+              <span class="metric-badge live-hz">60 Hz</span>
+            </div>
+            <div class="metric-value" id="metricSteps">0 <span class="metric-sub-val">/ 500</span></div>
+            <div class="metric-sub-text" id="metricReturn">Return: 0.00</div>
+            <div class="progress-container">
+              <div class="progress-bar frame-bar" id="frameProgressBar"></div>
+            </div>
+          </div>
+
+          <!-- Card 3: Robot End-Effector -->
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">Robot End-Effector</span>
+              <span class="metric-badge">PD Spring</span>
+            </div>
+            <div class="metric-value purple" id="metricAgentPos">(256, 100)</div>
+            <div class="metric-sub-text" id="metricAgentSpeed">Speed: 0.0 px/f</div>
+          </div>
+
+          <!-- Card 4: T-Block Pose -->
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">T-Block Pose</span>
+              <span class="metric-badge">Rigid 2D</span>
+            </div>
+            <div class="metric-value green" id="metricBlockPos">(256, 320)</div>
+            <div class="metric-sub-text" id="metricBlockAngle">Angle: 23.0°</div>
+          </div>
+        </div>
+
+        <!-- Realtime Teleop Graph with 90% Threshold Guide -->
+        <div style="margin-top: 10px;">
+          <div class="chart-card">
+            <div class="chart-header">
+              <span class="chart-title">Realtime Coverage Trajectory Curve</span>
+              <span class="chart-legend"><span class="legend-dot"></span>Target 90% Success Line</span>
+            </div>
+            <canvas id="chartCanvas" width="540" height="54" class="chart-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls & Hotkeys Guide Box -->
+      <div class="card guide-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <strong>🎮 TELEOPERATION & KEYBOARD CONTROLS:</strong>
+          <span class="hotkeys-badge">[Space] Pause &nbsp;|&nbsp; [M] AI Autopilot &nbsp;|&nbsp; [R] Reset &nbsp;|&nbsp; [S] Record</span>
+        </div>
+        1. Move mouse on canvas to teleoperate circle robot with spring force.<br>
+        2. Push T-block into translucent target goal zone (≥90% for success).<br>
+        3. Click <strong>[• Record]</strong> or press <strong>[S]</strong> to collect trajectories, and <strong>[• Export]</strong> to save!<br>
+        4. Press <strong>[M]</strong> or click <strong>[• Autopilot]</strong> to toggle AI Expert Policy demonstration.
+      </div>
+
+      <!-- Dataset Management Table -->
+      <div class="card dataset-section">
+        <div class="section-header">
+          <div class="section-title">
+            <span class="btn-dot dot-cyan" style="display:inline-block;"></span>
+            <span>Collected Demonstration Episodes</span>
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>EP ID</th>
+                <th>FRAMES</th>
+                <th>PEAK COVERAGE</th>
+                <th>STATUS</th>
+                <th>ACTION</th>
+              </tr>
+            </thead>
+            <tbody id="episodesTbody">
+              <tr>
+                <td colspan="5" style="text-align: center; color: var(--text-muted); padding: 16px;">
+                  No demonstration episodes recorded yet. Click <strong>[• Record]</strong> to collect your first trajectory!
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    LeRobot 2D PushT Physical AI Teleoperation Simulator • Built for HWIHWA LAB with 60 FPS 2D Physics
+  </footer>
+
+  <script src="pusht_sim.js"></script>
+</body>
+</html>
