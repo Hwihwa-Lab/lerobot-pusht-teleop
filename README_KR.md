@@ -146,4 +146,4 @@ lerobot-pusht-teleop/
 
 ---
 
-*Developed and deployed with [LeRobot 2D PushT Teleoperation Cockpit](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop) by **hwihwalab** (HWIHWA LAB).*
+*Developed and deployed with [LeRobot 2D PushT Teleoperation Cockpit](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop) by **Hwihwa Lab**.*

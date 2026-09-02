@@ -184,4 +184,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ---
 
-*Developed and deployed with [LeRobot 2D PushT Teleoperation Cockpit](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop) by **hwihwalab**.*
+*Developed and deployed with [LeRobot 2D PushT Teleoperation Cockpit](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop) by **Hwihwa Lab**.*
