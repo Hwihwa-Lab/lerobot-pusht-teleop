@@ -1,6 +1,6 @@
 # 📊 LeRobot 2D PushT Simulator // 데이터 스키마 명세서
 
-본 문서는 시뮬레이터의 상태 공간(Observation Space), 행동 공간(Action Space), 그리고 Hugging Face LeRobot 표준 에피소드 데이터셋의 JSON/Parquet 스키마를 정의합니다.
+본 문서는 시뮬레이터의 상태 공간(Observation Space), 행동 공간(Action Space), 강화학습 보상 수식, 그리고 Hugging Face LeRobot 표준 에피소드 데이터셋의 JSON 스키마를 정의합니다.
 
 ---
 
@@ -40,11 +40,15 @@ $$a_t = [x_{target}, y_{target}]$$
    $$\text{Coverage} = \min\left(1.0, (0.65 \cdot S_{pos} + 0.35 \cdot S_{rot})\right)$$
    * $\text{Coverage} \ge 0.90$ (90% 이상) 달성 시 `success = True`.
 
+4. **강화학습 스텝 보상 (RL Step Reward) & 누적 리턴 (Cumulative Return)**:
+   $$r_t = \max\left(-0.1, \text{Coverage}_t - \frac{\text{dist}(\text{agent}, \text{block})}{1000}\right)$$
+   $$R = \sum_{t=0}^{T} r_t$$
+
 ---
 
 ## 📦 3. LeRobot 표준 데이터셋 포맷 (JSON Schema)
 
-내보내기(`[💾 Export Dataset]`) 및 파이썬 저장 시 생성되는 JSON 구조:
+내보내기(`[• Export]`) 및 파이썬 저장 시 생성되는 JSON 구조:
 
 ```json
 [
