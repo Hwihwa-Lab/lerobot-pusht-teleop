@@ -49,7 +49,39 @@ def deploy_space(api: Any, username: str, repo_name: str, token: str, current_di
     print(f"\n🚀 Deploying to Hugging Face Spaces: {repo_id}...")
     create_repo(repo_id=repo_id, repo_type="space", space_sdk="static", exist_ok=True, token=token)
 
-    files_to_upload = ["index.html", "style.css", "pusht_sim.js", "README.md", "README_KR.md", "eval_info.json", "LICENSE"]
+    # 1. Read README content and inject Spaces YAML Header with sdk: static
+    readme_path = current_dir / "README.md"
+    readme_text = ""
+    if readme_path.exists():
+        raw_text = readme_path.read_text(encoding="utf-8")
+        # Strip existing frontmatter if any
+        if raw_text.startswith("---"):
+            parts = raw_text.split("---", 2)
+            if len(parts) >= 3:
+                raw_text = parts[2].strip()
+
+        spaces_header = f"""---
+title: LeRobot 2D PushT Interactive Teleop Simulator
+emoji: 🤖
+colorFrom: blue
+colorTo: green
+sdk: static
+pinned: false
+license: mit
+tags:
+- robotics
+- lerobot
+- imitation-learning
+- physical-ai
+- pusht
+- teleoperation
+---
+
+"""
+        readme_text = spaces_header + raw_text
+
+    # Upload space files
+    files_to_upload = ["index.html", "style.css", "pusht_sim.js", "README_KR.md", "eval_info.json", "LICENSE"]
     for filename in files_to_upload:
         file_path = current_dir / filename
         if file_path.exists():
@@ -61,6 +93,17 @@ def deploy_space(api: Any, username: str, repo_name: str, token: str, current_di
                 token=token
             )
             print(f"  ✓ {filename} 업로드 완료")
+
+    # Upload Spaces-compliant README.md
+    if readme_text:
+        api.upload_file(
+            path_or_fileobj=readme_text.encode("utf-8"),
+            path_in_repo="README.md",
+            repo_id=repo_id,
+            repo_type="space",
+            token=token
+        )
+        print(f"  ✓ README.md (Spaces Static SDK YAML) 업로드 완료")
 
     print(f"🎉 Spaces 배포 완료: https://huggingface.co/spaces/{repo_id}")
 
