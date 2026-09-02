@@ -17,8 +17,10 @@ import zipfile
 from pathlib import Path
 
 try:
+    import huggingface_hub
     from huggingface_hub import HfApi, create_repo
 except ImportError:
+    huggingface_hub = None  # type: ignore
     HfApi = None  # type: ignore
     create_repo = None  # type: ignore
 
@@ -87,7 +89,7 @@ def deploy():
     print("🤖 HWIHWA LAB - LeRobot 2D PushT Universal Hugging Face Deployment")
     print("=" * 68)
 
-    token = os.environ.get("HF_TOKEN")
+    token = os.environ.get("HF_TOKEN") or (huggingface_hub.get_token() if huggingface_hub else None)
     if not token:
         print("\n🔑 Hugging Face Write Token이 필요합니다.")
         print("토큰 발급/확인: https://huggingface.co/settings/tokens")
