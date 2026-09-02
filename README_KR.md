@@ -116,14 +116,20 @@ python deploy_to_hf.py
 
 ---
 
-## 📁 거버넌스 및 설계 문서 체계
+## 📂 저장소 디렉토리 구조 (Repository Structure)
 
-* [.cursorrules](.cursorrules): AI 바이브코딩 방어 및 로보틱스 규격 준수 룰
-* [DOCS_AI_CODING_PROTOCOL.md](DOCS_AI_CODING_PROTOCOL.md): 5대 거버넌스 최상위 헌법 문서
-* [DOCS_SYSTEM_ARCHITECTURE.md](DOCS_SYSTEM_ARCHITECTURE.md): 시스템 아키텍처 및 물리 엔진 명세
-* [DOCS_DATA_SCHEMA.md](DOCS_DATA_SCHEMA.md): 상태/행동 공간, RL 보상 및 LeRobot 데이터셋 스키마
-* [DOCS_MODEL_EVALUATION_AND_HF_DEPLOY.md](DOCS_MODEL_EVALUATION_AND_HF_DEPLOY.md): 평가 루브릭 및 배포 프로토콜
-* [DOCS_UI_DESIGN_SPEC.md](DOCS_UI_DESIGN_SPEC.md): 사이버펑크 랩 다크모드 UI 규격서
+```
+lerobot-pusht-teleop/
+├── eval_benchmark.py     # 200회 골드 스탠다드 무화면 자동 벤치마크 평가기
+├── eval_info.json        # 200회 시뮬레이션 실측 통계 결과 리포트 (JSON)
+├── server.py             # FastAPI WebSocket 고성능 실시간 물리 서버
+├── pusht_teleop.py       # 파이썬 Pygame 네이티브 텔레오퍼레이션 클라이언트
+├── lerobot_pusht_bundle.zip # 오프라인 실행용 전체 소스 & 웹 에셋 압축 번들
+├── requirements.txt      # 파이썬 필수 패키지 목록 (FastAPI, Pygame 등)
+├── README.md             # 영문 공식 모델 카드 및 종합 매뉴얼
+├── README_KR.md          # 한국어 공식 매뉴얼
+└── LICENSE               # MIT 오픈소스 라이선스 (HWIHWA LAB)
+```
 
 ---
 

@@ -154,14 +154,20 @@ python deploy_to_hf.py
 
 ---
 
-## 📁 Repository Governance & Architecture
+## 📂 Repository Structure
 
-* [.cursorrules](.cursorrules): AI Vibe-coding & robotics defense guidelines.
-* [DOCS_AI_CODING_PROTOCOL.md](DOCS_AI_CODING_PROTOCOL.md): Master constitution and document mappings.
-* [DOCS_SYSTEM_ARCHITECTURE.md](DOCS_SYSTEM_ARCHITECTURE.md): Physics engine & dual execution architecture.
-* [DOCS_DATA_SCHEMA.md](DOCS_DATA_SCHEMA.md): State/action space, RL reward, and LeRobot dataset schemas.
-* [DOCS_MODEL_EVALUATION_AND_HF_DEPLOY.md](DOCS_MODEL_EVALUATION_AND_HF_DEPLOY.md): Evaluation rubrics & HF deployment guide.
-* [DOCS_UI_DESIGN_SPEC.md](DOCS_UI_DESIGN_SPEC.md): Cyberpunk lab dark-mode design specifications.
+```
+lerobot-pusht-teleop/
+├── eval_benchmark.py     # 200-Episode Headless Empirical Benchmark Evaluator
+├── eval_info.json        # Quantitative 200-Episode Verification Results (JSON)
+├── server.py             # FastAPI WebSocket Real-time Physics Server
+├── pusht_teleop.py       # Native Python Pygame Teleoperation Client
+├── lerobot_pusht_bundle.zip # Complete Offline Source & Web Assets Bundle
+├── requirements.txt      # Python Dependencies (FastAPI, Pygame, etc.)
+├── README.md             # Official English Model Card & Documentation
+├── README_KR.md          # Official Korean Manual (한국어 매뉴얼)
+└── LICENSE               # MIT Open Source License (HWIHWA LAB)
+```
 
 ---
 

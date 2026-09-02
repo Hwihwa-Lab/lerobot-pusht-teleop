@@ -15,6 +15,7 @@ import glob
 import json
 import zipfile
 from pathlib import Path
+from typing import Any
 
 try:
     import huggingface_hub
@@ -69,7 +70,11 @@ def deploy_model(api: Any, username: str, repo_name: str, token: str, current_di
     create_repo(repo_id=repo_id, repo_type="model", exist_ok=True, token=token)
 
     zip_file = create_bundle_zip(current_dir)
-    upload_files = ["README.md", "README_KR.md", "eval_info.json", "LICENSE", "lerobot_pusht_bundle.zip"]
+    upload_files = [
+        "README.md", "README_KR.md", "eval_info.json", "eval_benchmark.py",
+        "pusht_teleop.py", "server.py", "requirements.txt",
+        "lerobot_pusht_bundle.zip", "LICENSE"
+    ]
     for fn in upload_files:
         fp = current_dir / fn
         if fp.exists():
