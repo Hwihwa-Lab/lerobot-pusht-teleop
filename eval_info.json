@@ -1,0 +1,1616 @@
+{
+  "summary": {
+    "benchmark_suite": "HWIHWA LAB LeRobot 2D PushT Standard",
+    "num_episodes": 200,
+    "success_rate_90": 13.0,
+    "success_rate_95": 1.0,
+    "mean_peak_coverage": 0.8054,
+    "mean_episode_steps": 495.2,
+    "mean_cumulative_return": -3.9,
+    "simulation_fps": 174347.7,
+    "total_elapsed_seconds": 0.568,
+    "pass_status": "NEEDS_IMPROVEMENT"
+  },
+  "episodes": [
+    {
+      "episode_id": 1,
+      "steps": 500,
+      "peak_coverage": 0.8733,
+      "success_90": false,
+      "success_95": false,
+      "return": 20.69
+    },
+    {
+      "episode_id": 2,
+      "steps": 500,
+      "peak_coverage": 0.9145,
+      "success_90": true,
+      "success_95": false,
+      "return": -4.23
+    },
+    {
+      "episode_id": 3,
+      "steps": 500,
+      "peak_coverage": 0.7302,
+      "success_90": false,
+      "success_95": false,
+      "return": -13.13
+    },
+    {
+      "episode_id": 4,
+      "steps": 500,
+      "peak_coverage": 0.8173,
+      "success_90": false,
+      "success_95": false,
+      "return": -11.9
+    },
+    {
+      "episode_id": 5,
+      "steps": 500,
+      "peak_coverage": 0.6069,
+      "success_90": false,
+      "success_95": false,
+      "return": -11.67
+    },
+    {
+      "episode_id": 6,
+      "steps": 500,
+      "peak_coverage": 0.723,
+      "success_90": false,
+      "success_95": false,
+      "return": -16.13
+    },
+    {
+      "episode_id": 7,
+      "steps": 500,
+      "peak_coverage": 0.8014,
+      "success_90": false,
+      "success_95": false,
+      "return": -1.73
+    },
+    {
+      "episode_id": 8,
+      "steps": 500,
+      "peak_coverage": 0.7544,
+      "success_90": false,
+      "success_95": false,
+      "return": 0.31
+    },
+    {
+      "episode_id": 9,
+      "steps": 500,
+      "peak_coverage": 0.794,
+      "success_90": false,
+      "success_95": false,
+      "return": -17.52
+    },
+    {
+      "episode_id": 10,
+      "steps": 500,
+      "peak_coverage": 0.8385,
+      "success_90": false,
+      "success_95": false,
+      "return": -9.17
+    },
+    {
+      "episode_id": 11,
+      "steps": 500,
+      "peak_coverage": 0.8848,
+      "success_90": false,
+      "success_95": false,
+      "return": 16.93
+    },
+    {
+      "episode_id": 12,
+      "steps": 500,
+      "peak_coverage": 0.8755,
+      "success_90": false,
+      "success_95": false,
+      "return": -9.14
+    },
+    {
+      "episode_id": 13,
+      "steps": 500,
+      "peak_coverage": 0.841,
+      "success_90": false,
+      "success_95": false,
+      "return": -16.69
+    },
+    {
+      "episode_id": 14,
+      "steps": 500,
+      "peak_coverage": 0.7326,
+      "success_90": false,
+      "success_95": false,
+      "return": -8.45
+    },
+    {
+      "episode_id": 15,
+      "steps": 500,
+      "peak_coverage": 0.7374,
+      "success_90": false,
+      "success_95": false,
+      "return": 4.53
+    },
+    {
+      "episode_id": 16,
+      "steps": 500,
+      "peak_coverage": 0.8722,
+      "success_90": false,
+      "success_95": false,
+      "return": 6.78
+    },
+    {
+      "episode_id": 17,
+      "steps": 500,
+      "peak_coverage": 0.7552,
+      "success_90": false,
+      "success_95": false,
+      "return": -3.72
+    },
+    {
+      "episode_id": 18,
+      "steps": 500,
+      "peak_coverage": 0.8646,
+      "success_90": false,
+      "success_95": false,
+      "return": -15.94
+    },
+    {
+      "episode_id": 19,
+      "steps": 500,
+      "peak_coverage": 0.7433,
+      "success_90": false,
+      "success_95": false,
+      "return": 0.85
+    },
+    {
+      "episode_id": 20,
+      "steps": 500,
+      "peak_coverage": 0.9242,
+      "success_90": true,
+      "success_95": false,
+      "return": -5.87
+    },
+    {
+      "episode_id": 21,
+      "steps": 500,
+      "peak_coverage": 0.8365,
+      "success_90": false,
+      "success_95": false,
+      "return": -8.0
+    },
+    {
+      "episode_id": 22,
+      "steps": 500,
+      "peak_coverage": 0.5664,
+      "success_90": false,
+      "success_95": false,
+      "return": -25.82
+    },
+    {
+      "episode_id": 23,
+      "steps": 500,
+      "peak_coverage": 0.7755,
+      "success_90": false,
+      "success_95": false,
+      "return": -4.32
+    },
+    {
+      "episode_id": 24,
+      "steps": 500,
+      "peak_coverage": 0.7494,
+      "success_90": false,
+      "success_95": false,
+      "return": -22.13
+    },
+    {
+      "episode_id": 25,
+      "steps": 500,
+      "peak_coverage": 0.8156,
+      "success_90": false,
+      "success_95": false,
+      "return": 0.24
+    },
+    {
+      "episode_id": 26,
+      "steps": 500,
+      "peak_coverage": 0.8171,
+      "success_90": false,
+      "success_95": false,
+      "return": -5.93
+    },
+    {
+      "episode_id": 27,
+      "steps": 500,
+      "peak_coverage": 0.7188,
+      "success_90": false,
+      "success_95": false,
+      "return": -18.86
+    },
+    {
+      "episode_id": 28,
+      "steps": 500,
+      "peak_coverage": 0.7982,
+      "success_90": false,
+      "success_95": false,
+      "return": -4.82
+    },
+    {
+      "episode_id": 29,
+      "steps": 500,
+      "peak_coverage": 0.9253,
+      "success_90": true,
+      "success_95": false,
+      "return": 22.72
+    },
+    {
+      "episode_id": 30,
+      "steps": 500,
+      "peak_coverage": 0.8477,
+      "success_90": false,
+      "success_95": false,
+      "return": 0.7
+    },
+    {
+      "episode_id": 31,
+      "steps": 500,
+      "peak_coverage": 0.7865,
+      "success_90": false,
+      "success_95": false,
+      "return": -2.09
+    },
+    {
+      "episode_id": 32,
+      "steps": 500,
+      "peak_coverage": 0.8162,
+      "success_90": false,
+      "success_95": false,
+      "return": -0.65
+    },
+    {
+      "episode_id": 33,
+      "steps": 500,
+      "peak_coverage": 0.697,
+      "success_90": false,
+      "success_95": false,
+      "return": -23.18
+    },
+    {
+      "episode_id": 34,
+      "steps": 500,
+      "peak_coverage": 0.7275,
+      "success_90": false,
+      "success_95": false,
+      "return": -9.87
+    },
+    {
+      "episode_id": 35,
+      "steps": 500,
+      "peak_coverage": 0.934,
+      "success_90": true,
+      "success_95": false,
+      "return": -5.1
+    },
+    {
+      "episode_id": 36,
+      "steps": 500,
+      "peak_coverage": 0.7158,
+      "success_90": false,
+      "success_95": false,
+      "return": -24.09
+    },
+    {
+      "episode_id": 37,
+      "steps": 500,
+      "peak_coverage": 0.8448,
+      "success_90": false,
+      "success_95": false,
+      "return": -14.53
+    },
+    {
+      "episode_id": 38,
+      "steps": 500,
+      "peak_coverage": 0.8686,
+      "success_90": false,
+      "success_95": false,
+      "return": -10.4
+    },
+    {
+      "episode_id": 39,
+      "steps": 500,
+      "peak_coverage": 0.7766,
+      "success_90": false,
+      "success_95": false,
+      "return": 14.32
+    },
+    {
+      "episode_id": 40,
+      "steps": 500,
+      "peak_coverage": 0.6811,
+      "success_90": false,
+      "success_95": false,
+      "return": -11.66
+    },
+    {
+      "episode_id": 41,
+      "steps": 500,
+      "peak_coverage": 0.6986,
+      "success_90": false,
+      "success_95": false,
+      "return": -7.71
+    },
+    {
+      "episode_id": 42,
+      "steps": 500,
+      "peak_coverage": 0.7619,
+      "success_90": false,
+      "success_95": false,
+      "return": -15.91
+    },
+    {
+      "episode_id": 43,
+      "steps": 500,
+      "peak_coverage": 0.7951,
+      "success_90": false,
+      "success_95": false,
+      "return": -3.45
+    },
+    {
+      "episode_id": 44,
+      "steps": 500,
+      "peak_coverage": 0.7512,
+      "success_90": false,
+      "success_95": false,
+      "return": -22.87
+    },
+    {
+      "episode_id": 45,
+      "steps": 500,
+      "peak_coverage": 0.7095,
+      "success_90": false,
+      "success_95": false,
+      "return": 3.26
+    },
+    {
+      "episode_id": 46,
+      "steps": 500,
+      "peak_coverage": 0.7975,
+      "success_90": false,
+      "success_95": false,
+      "return": -24.18
+    },
+    {
+      "episode_id": 47,
+      "steps": 500,
+      "peak_coverage": 0.826,
+      "success_90": false,
+      "success_95": false,
+      "return": 20.95
+    },
+    {
+      "episode_id": 48,
+      "steps": 500,
+      "peak_coverage": 0.9341,
+      "success_90": true,
+      "success_95": false,
+      "return": 1.05
+    },
+    {
+      "episode_id": 49,
+      "steps": 500,
+      "peak_coverage": 0.8813,
+      "success_90": false,
+      "success_95": false,
+      "return": -8.08
+    },
+    {
+      "episode_id": 50,
+      "steps": 500,
+      "peak_coverage": 0.8092,
+      "success_90": false,
+      "success_95": false,
+      "return": -5.65
+    },
+    {
+      "episode_id": 51,
+      "steps": 500,
+      "peak_coverage": 0.8798,
+      "success_90": false,
+      "success_95": false,
+      "return": -1.22
+    },
+    {
+      "episode_id": 52,
+      "steps": 500,
+      "peak_coverage": 0.7462,
+      "success_90": false,
+      "success_95": false,
+      "return": -2.49
+    },
+    {
+      "episode_id": 53,
+      "steps": 500,
+      "peak_coverage": 0.7567,
+      "success_90": false,
+      "success_95": false,
+      "return": -4.22
+    },
+    {
+      "episode_id": 54,
+      "steps": 500,
+      "peak_coverage": 0.9072,
+      "success_90": true,
+      "success_95": false,
+      "return": -2.59
+    },
+    {
+      "episode_id": 55,
+      "steps": 500,
+      "peak_coverage": 0.8764,
+      "success_90": false,
+      "success_95": false,
+      "return": -18.83
+    },
+    {
+      "episode_id": 56,
+      "steps": 500,
+      "peak_coverage": 0.8461,
+      "success_90": false,
+      "success_95": false,
+      "return": -14.38
+    },
+    {
+      "episode_id": 57,
+      "steps": 500,
+      "peak_coverage": 0.8201,
+      "success_90": false,
+      "success_95": false,
+      "return": -5.26
+    },
+    {
+      "episode_id": 58,
+      "steps": 500,
+      "peak_coverage": 0.7524,
+      "success_90": false,
+      "success_95": false,
+      "return": -2.62
+    },
+    {
+      "episode_id": 59,
+      "steps": 500,
+      "peak_coverage": 0.8019,
+      "success_90": false,
+      "success_95": false,
+      "return": 5.58
+    },
+    {
+      "episode_id": 60,
+      "steps": 500,
+      "peak_coverage": 0.7625,
+      "success_90": false,
+      "success_95": false,
+      "return": -8.76
+    },
+    {
+      "episode_id": 61,
+      "steps": 500,
+      "peak_coverage": 0.8789,
+      "success_90": false,
+      "success_95": false,
+      "return": -2.81
+    },
+    {
+      "episode_id": 62,
+      "steps": 500,
+      "peak_coverage": 0.6343,
+      "success_90": false,
+      "success_95": false,
+      "return": -17.74
+    },
+    {
+      "episode_id": 63,
+      "steps": 500,
+      "peak_coverage": 0.868,
+      "success_90": false,
+      "success_95": false,
+      "return": 26.68
+    },
+    {
+      "episode_id": 64,
+      "steps": 500,
+      "peak_coverage": 0.8292,
+      "success_90": false,
+      "success_95": false,
+      "return": -13.61
+    },
+    {
+      "episode_id": 65,
+      "steps": 500,
+      "peak_coverage": 0.8002,
+      "success_90": false,
+      "success_95": false,
+      "return": -11.38
+    },
+    {
+      "episode_id": 66,
+      "steps": 500,
+      "peak_coverage": 0.922,
+      "success_90": true,
+      "success_95": false,
+      "return": 23.54
+    },
+    {
+      "episode_id": 67,
+      "steps": 500,
+      "peak_coverage": 0.7299,
+      "success_90": false,
+      "success_95": false,
+      "return": -21.11
+    },
+    {
+      "episode_id": 68,
+      "steps": 500,
+      "peak_coverage": 0.7548,
+      "success_90": false,
+      "success_95": false,
+      "return": -2.78
+    },
+    {
+      "episode_id": 69,
+      "steps": 500,
+      "peak_coverage": 0.8091,
+      "success_90": false,
+      "success_95": false,
+      "return": -6.98
+    },
+    {
+      "episode_id": 70,
+      "steps": 500,
+      "peak_coverage": 0.8574,
+      "success_90": false,
+      "success_95": false,
+      "return": 2.24
+    },
+    {
+      "episode_id": 71,
+      "steps": 500,
+      "peak_coverage": 0.9493,
+      "success_90": true,
+      "success_95": false,
+      "return": -5.54
+    },
+    {
+      "episode_id": 72,
+      "steps": 500,
+      "peak_coverage": 0.7527,
+      "success_90": false,
+      "success_95": false,
+      "return": -9.91
+    },
+    {
+      "episode_id": 73,
+      "steps": 500,
+      "peak_coverage": 0.8334,
+      "success_90": false,
+      "success_95": false,
+      "return": 7.8
+    },
+    {
+      "episode_id": 74,
+      "steps": 500,
+      "peak_coverage": 0.7867,
+      "success_90": false,
+      "success_95": false,
+      "return": 5.22
+    },
+    {
+      "episode_id": 75,
+      "steps": 500,
+      "peak_coverage": 0.6013,
+      "success_90": false,
+      "success_95": false,
+      "return": -22.52
+    },
+    {
+      "episode_id": 76,
+      "steps": 500,
+      "peak_coverage": 0.8856,
+      "success_90": false,
+      "success_95": false,
+      "return": -4.92
+    },
+    {
+      "episode_id": 77,
+      "steps": 500,
+      "peak_coverage": 0.9078,
+      "success_90": true,
+      "success_95": false,
+      "return": -7.43
+    },
+    {
+      "episode_id": 78,
+      "steps": 500,
+      "peak_coverage": 0.9455,
+      "success_90": true,
+      "success_95": false,
+      "return": -0.07
+    },
+    {
+      "episode_id": 79,
+      "steps": 500,
+      "peak_coverage": 0.6921,
+      "success_90": false,
+      "success_95": false,
+      "return": -15.2
+    },
+    {
+      "episode_id": 80,
+      "steps": 500,
+      "peak_coverage": 0.7422,
+      "success_90": false,
+      "success_95": false,
+      "return": 2.42
+    },
+    {
+      "episode_id": 81,
+      "steps": 500,
+      "peak_coverage": 0.763,
+      "success_90": false,
+      "success_95": false,
+      "return": 5.93
+    },
+    {
+      "episode_id": 82,
+      "steps": 500,
+      "peak_coverage": 0.9133,
+      "success_90": true,
+      "success_95": false,
+      "return": 10.74
+    },
+    {
+      "episode_id": 83,
+      "steps": 500,
+      "peak_coverage": 0.796,
+      "success_90": false,
+      "success_95": false,
+      "return": -14.32
+    },
+    {
+      "episode_id": 84,
+      "steps": 500,
+      "peak_coverage": 0.8606,
+      "success_90": false,
+      "success_95": false,
+      "return": -5.18
+    },
+    {
+      "episode_id": 85,
+      "steps": 500,
+      "peak_coverage": 0.8931,
+      "success_90": false,
+      "success_95": false,
+      "return": 5.01
+    },
+    {
+      "episode_id": 86,
+      "steps": 500,
+      "peak_coverage": 0.7493,
+      "success_90": false,
+      "success_95": false,
+      "return": -18.23
+    },
+    {
+      "episode_id": 87,
+      "steps": 500,
+      "peak_coverage": 0.8733,
+      "success_90": false,
+      "success_95": false,
+      "return": 5.47
+    },
+    {
+      "episode_id": 88,
+      "steps": 500,
+      "peak_coverage": 0.9011,
+      "success_90": true,
+      "success_95": false,
+      "return": -4.39
+    },
+    {
+      "episode_id": 89,
+      "steps": 500,
+      "peak_coverage": 0.8398,
+      "success_90": false,
+      "success_95": false,
+      "return": 10.97
+    },
+    {
+      "episode_id": 90,
+      "steps": 500,
+      "peak_coverage": 0.7472,
+      "success_90": false,
+      "success_95": false,
+      "return": -9.8
+    },
+    {
+      "episode_id": 91,
+      "steps": 500,
+      "peak_coverage": 0.7341,
+      "success_90": false,
+      "success_95": false,
+      "return": -19.04
+    },
+    {
+      "episode_id": 92,
+      "steps": 500,
+      "peak_coverage": 0.8459,
+      "success_90": false,
+      "success_95": false,
+      "return": -5.03
+    },
+    {
+      "episode_id": 93,
+      "steps": 500,
+      "peak_coverage": 0.7309,
+      "success_90": false,
+      "success_95": false,
+      "return": -3.09
+    },
+    {
+      "episode_id": 94,
+      "steps": 500,
+      "peak_coverage": 0.7305,
+      "success_90": false,
+      "success_95": false,
+      "return": -18.1
+    },
+    {
+      "episode_id": 95,
+      "steps": 500,
+      "peak_coverage": 0.7736,
+      "success_90": false,
+      "success_95": false,
+      "return": -10.77
+    },
+    {
+      "episode_id": 96,
+      "steps": 500,
+      "peak_coverage": 0.8667,
+      "success_90": false,
+      "success_95": false,
+      "return": 0.53
+    },
+    {
+      "episode_id": 97,
+      "steps": 500,
+      "peak_coverage": 0.7277,
+      "success_90": false,
+      "success_95": false,
+      "return": 9.3
+    },
+    {
+      "episode_id": 98,
+      "steps": 500,
+      "peak_coverage": 0.7819,
+      "success_90": false,
+      "success_95": false,
+      "return": -9.3
+    },
+    {
+      "episode_id": 99,
+      "steps": 500,
+      "peak_coverage": 0.9272,
+      "success_90": true,
+      "success_95": false,
+      "return": -19.57
+    },
+    {
+      "episode_id": 100,
+      "steps": 500,
+      "peak_coverage": 0.7503,
+      "success_90": false,
+      "success_95": false,
+      "return": 15.28
+    },
+    {
+      "episode_id": 101,
+      "steps": 500,
+      "peak_coverage": 0.8246,
+      "success_90": false,
+      "success_95": false,
+      "return": 0.9
+    },
+    {
+      "episode_id": 102,
+      "steps": 500,
+      "peak_coverage": 0.901,
+      "success_90": true,
+      "success_95": false,
+      "return": -7.61
+    },
+    {
+      "episode_id": 103,
+      "steps": 500,
+      "peak_coverage": 0.7844,
+      "success_90": false,
+      "success_95": false,
+      "return": -4.18
+    },
+    {
+      "episode_id": 104,
+      "steps": 500,
+      "peak_coverage": 0.7265,
+      "success_90": false,
+      "success_95": false,
+      "return": 14.16
+    },
+    {
+      "episode_id": 105,
+      "steps": 500,
+      "peak_coverage": 0.9357,
+      "success_90": true,
+      "success_95": false,
+      "return": -10.31
+    },
+    {
+      "episode_id": 106,
+      "steps": 500,
+      "peak_coverage": 0.7577,
+      "success_90": false,
+      "success_95": false,
+      "return": 3.3
+    },
+    {
+      "episode_id": 107,
+      "steps": 500,
+      "peak_coverage": 0.7754,
+      "success_90": false,
+      "success_95": false,
+      "return": -0.55
+    },
+    {
+      "episode_id": 108,
+      "steps": 500,
+      "peak_coverage": 0.9036,
+      "success_90": true,
+      "success_95": false,
+      "return": -4.84
+    },
+    {
+      "episode_id": 109,
+      "steps": 500,
+      "peak_coverage": 0.8009,
+      "success_90": false,
+      "success_95": false,
+      "return": 17.08
+    },
+    {
+      "episode_id": 110,
+      "steps": 500,
+      "peak_coverage": 0.6998,
+      "success_90": false,
+      "success_95": false,
+      "return": -24.5
+    },
+    {
+      "episode_id": 111,
+      "steps": 500,
+      "peak_coverage": 0.8484,
+      "success_90": false,
+      "success_95": false,
+      "return": -0.26
+    },
+    {
+      "episode_id": 112,
+      "steps": 500,
+      "peak_coverage": 0.8059,
+      "success_90": false,
+      "success_95": false,
+      "return": -3.79
+    },
+    {
+      "episode_id": 113,
+      "steps": 500,
+      "peak_coverage": 0.6859,
+      "success_90": false,
+      "success_95": false,
+      "return": -20.4
+    },
+    {
+      "episode_id": 114,
+      "steps": 500,
+      "peak_coverage": 0.8117,
+      "success_90": false,
+      "success_95": false,
+      "return": 14.36
+    },
+    {
+      "episode_id": 115,
+      "steps": 500,
+      "peak_coverage": 0.799,
+      "success_90": false,
+      "success_95": false,
+      "return": 7.58
+    },
+    {
+      "episode_id": 116,
+      "steps": 500,
+      "peak_coverage": 0.7811,
+      "success_90": false,
+      "success_95": false,
+      "return": -0.04
+    },
+    {
+      "episode_id": 117,
+      "steps": 500,
+      "peak_coverage": 0.8892,
+      "success_90": false,
+      "success_95": false,
+      "return": 26.47
+    },
+    {
+      "episode_id": 118,
+      "steps": 500,
+      "peak_coverage": 0.7994,
+      "success_90": false,
+      "success_95": false,
+      "return": -13.77
+    },
+    {
+      "episode_id": 119,
+      "steps": 500,
+      "peak_coverage": 0.896,
+      "success_90": false,
+      "success_95": false,
+      "return": -4.92
+    },
+    {
+      "episode_id": 120,
+      "steps": 500,
+      "peak_coverage": 0.8984,
+      "success_90": false,
+      "success_95": false,
+      "return": -0.71
+    },
+    {
+      "episode_id": 121,
+      "steps": 500,
+      "peak_coverage": 0.838,
+      "success_90": false,
+      "success_95": false,
+      "return": -15.76
+    },
+    {
+      "episode_id": 122,
+      "steps": 500,
+      "peak_coverage": 0.8683,
+      "success_90": false,
+      "success_95": false,
+      "return": 3.07
+    },
+    {
+      "episode_id": 123,
+      "steps": 500,
+      "peak_coverage": 0.7205,
+      "success_90": false,
+      "success_95": false,
+      "return": -19.01
+    },
+    {
+      "episode_id": 124,
+      "steps": 500,
+      "peak_coverage": 0.876,
+      "success_90": false,
+      "success_95": false,
+      "return": 3.15
+    },
+    {
+      "episode_id": 125,
+      "steps": 500,
+      "peak_coverage": 0.7397,
+      "success_90": false,
+      "success_95": false,
+      "return": -6.6
+    },
+    {
+      "episode_id": 126,
+      "steps": 500,
+      "peak_coverage": 0.866,
+      "success_90": false,
+      "success_95": false,
+      "return": -1.46
+    },
+    {
+      "episode_id": 127,
+      "steps": 500,
+      "peak_coverage": 0.7338,
+      "success_90": false,
+      "success_95": false,
+      "return": 15.65
+    },
+    {
+      "episode_id": 128,
+      "steps": 500,
+      "peak_coverage": 0.8163,
+      "success_90": false,
+      "success_95": false,
+      "return": 12.31
+    },
+    {
+      "episode_id": 129,
+      "steps": 500,
+      "peak_coverage": 0.9167,
+      "success_90": true,
+      "success_95": false,
+      "return": 10.3
+    },
+    {
+      "episode_id": 130,
+      "steps": 500,
+      "peak_coverage": 0.7729,
+      "success_90": false,
+      "success_95": false,
+      "return": -7.73
+    },
+    {
+      "episode_id": 131,
+      "steps": 500,
+      "peak_coverage": 0.7204,
+      "success_90": false,
+      "success_95": false,
+      "return": -8.15
+    },
+    {
+      "episode_id": 132,
+      "steps": 500,
+      "peak_coverage": 0.7433,
+      "success_90": false,
+      "success_95": false,
+      "return": -12.51
+    },
+    {
+      "episode_id": 133,
+      "steps": 500,
+      "peak_coverage": 0.9473,
+      "success_90": true,
+      "success_95": false,
+      "return": 16.11
+    },
+    {
+      "episode_id": 134,
+      "steps": 500,
+      "peak_coverage": 0.7763,
+      "success_90": false,
+      "success_95": false,
+      "return": -18.81
+    },
+    {
+      "episode_id": 135,
+      "steps": 500,
+      "peak_coverage": 0.6643,
+      "success_90": false,
+      "success_95": false,
+      "return": -17.23
+    },
+    {
+      "episode_id": 136,
+      "steps": 500,
+      "peak_coverage": 0.8118,
+      "success_90": false,
+      "success_95": false,
+      "return": -1.12
+    },
+    {
+      "episode_id": 137,
+      "steps": 500,
+      "peak_coverage": 0.8438,
+      "success_90": false,
+      "success_95": false,
+      "return": -2.04
+    },
+    {
+      "episode_id": 138,
+      "steps": 500,
+      "peak_coverage": 0.8437,
+      "success_90": false,
+      "success_95": false,
+      "return": 13.96
+    },
+    {
+      "episode_id": 139,
+      "steps": 500,
+      "peak_coverage": 0.7907,
+      "success_90": false,
+      "success_95": false,
+      "return": 2.83
+    },
+    {
+      "episode_id": 140,
+      "steps": 500,
+      "peak_coverage": 0.7271,
+      "success_90": false,
+      "success_95": false,
+      "return": 11.37
+    },
+    {
+      "episode_id": 141,
+      "steps": 500,
+      "peak_coverage": 0.7837,
+      "success_90": false,
+      "success_95": false,
+      "return": -5.59
+    },
+    {
+      "episode_id": 142,
+      "steps": 500,
+      "peak_coverage": 0.7677,
+      "success_90": false,
+      "success_95": false,
+      "return": 2.97
+    },
+    {
+      "episode_id": 143,
+      "steps": 500,
+      "peak_coverage": 0.8103,
+      "success_90": false,
+      "success_95": false,
+      "return": -6.8
+    },
+    {
+      "episode_id": 144,
+      "steps": 500,
+      "peak_coverage": 0.8463,
+      "success_90": false,
+      "success_95": false,
+      "return": 11.64
+    },
+    {
+      "episode_id": 145,
+      "steps": 500,
+      "peak_coverage": 0.817,
+      "success_90": false,
+      "success_95": false,
+      "return": -11.07
+    },
+    {
+      "episode_id": 146,
+      "steps": 500,
+      "peak_coverage": 0.8088,
+      "success_90": false,
+      "success_95": false,
+      "return": -7.3
+    },
+    {
+      "episode_id": 147,
+      "steps": 500,
+      "peak_coverage": 0.6926,
+      "success_90": false,
+      "success_95": false,
+      "return": -23.27
+    },
+    {
+      "episode_id": 148,
+      "steps": 500,
+      "peak_coverage": 0.8036,
+      "success_90": false,
+      "success_95": false,
+      "return": -16.07
+    },
+    {
+      "episode_id": 149,
+      "steps": 500,
+      "peak_coverage": 0.7271,
+      "success_90": false,
+      "success_95": false,
+      "return": -2.27
+    },
+    {
+      "episode_id": 150,
+      "steps": 500,
+      "peak_coverage": 0.7636,
+      "success_90": false,
+      "success_95": false,
+      "return": -12.39
+    },
+    {
+      "episode_id": 151,
+      "steps": 500,
+      "peak_coverage": 0.9045,
+      "success_90": true,
+      "success_95": false,
+      "return": -7.24
+    },
+    {
+      "episode_id": 152,
+      "steps": 500,
+      "peak_coverage": 0.709,
+      "success_90": false,
+      "success_95": false,
+      "return": -12.56
+    },
+    {
+      "episode_id": 153,
+      "steps": 500,
+      "peak_coverage": 0.9088,
+      "success_90": true,
+      "success_95": false,
+      "return": -8.84
+    },
+    {
+      "episode_id": 154,
+      "steps": 500,
+      "peak_coverage": 0.8993,
+      "success_90": false,
+      "success_95": false,
+      "return": 0.65
+    },
+    {
+      "episode_id": 155,
+      "steps": 500,
+      "peak_coverage": 0.9238,
+      "success_90": true,
+      "success_95": false,
+      "return": 16.69
+    },
+    {
+      "episode_id": 156,
+      "steps": 500,
+      "peak_coverage": 0.839,
+      "success_90": false,
+      "success_95": false,
+      "return": 4.23
+    },
+    {
+      "episode_id": 157,
+      "steps": 500,
+      "peak_coverage": 0.8735,
+      "success_90": false,
+      "success_95": false,
+      "return": 11.92
+    },
+    {
+      "episode_id": 158,
+      "steps": 500,
+      "peak_coverage": 0.7472,
+      "success_90": false,
+      "success_95": false,
+      "return": 14.79
+    },
+    {
+      "episode_id": 159,
+      "steps": 500,
+      "peak_coverage": 0.7877,
+      "success_90": false,
+      "success_95": false,
+      "return": -18.32
+    },
+    {
+      "episode_id": 160,
+      "steps": 500,
+      "peak_coverage": 0.8663,
+      "success_90": false,
+      "success_95": false,
+      "return": -6.36
+    },
+    {
+      "episode_id": 161,
+      "steps": 500,
+      "peak_coverage": 0.6672,
+      "success_90": false,
+      "success_95": false,
+      "return": -9.16
+    },
+    {
+      "episode_id": 162,
+      "steps": 500,
+      "peak_coverage": 0.6508,
+      "success_90": false,
+      "success_95": false,
+      "return": -24.31
+    },
+    {
+      "episode_id": 163,
+      "steps": 500,
+      "peak_coverage": 0.9088,
+      "success_90": true,
+      "success_95": false,
+      "return": 12.44
+    },
+    {
+      "episode_id": 164,
+      "steps": 500,
+      "peak_coverage": 0.8861,
+      "success_90": false,
+      "success_95": false,
+      "return": -8.29
+    },
+    {
+      "episode_id": 165,
+      "steps": 500,
+      "peak_coverage": 0.6478,
+      "success_90": false,
+      "success_95": false,
+      "return": -23.21
+    },
+    {
+      "episode_id": 166,
+      "steps": 500,
+      "peak_coverage": 0.8633,
+      "success_90": false,
+      "success_95": false,
+      "return": -10.03
+    },
+    {
+      "episode_id": 167,
+      "steps": 500,
+      "peak_coverage": 0.7389,
+      "success_90": false,
+      "success_95": false,
+      "return": 3.09
+    },
+    {
+      "episode_id": 168,
+      "steps": 500,
+      "peak_coverage": 0.8785,
+      "success_90": false,
+      "success_95": false,
+      "return": 6.72
+    },
+    {
+      "episode_id": 169,
+      "steps": 500,
+      "peak_coverage": 0.8159,
+      "success_90": false,
+      "success_95": false,
+      "return": -11.62
+    },
+    {
+      "episode_id": 170,
+      "steps": 500,
+      "peak_coverage": 0.7167,
+      "success_90": false,
+      "success_95": false,
+      "return": -17.49
+    },
+    {
+      "episode_id": 171,
+      "steps": 500,
+      "peak_coverage": 0.8464,
+      "success_90": false,
+      "success_95": false,
+      "return": 3.73
+    },
+    {
+      "episode_id": 172,
+      "steps": 500,
+      "peak_coverage": 0.905,
+      "success_90": true,
+      "success_95": false,
+      "return": -5.87
+    },
+    {
+      "episode_id": 173,
+      "steps": 500,
+      "peak_coverage": 0.8596,
+      "success_90": false,
+      "success_95": false,
+      "return": 7.44
+    },
+    {
+      "episode_id": 174,
+      "steps": 500,
+      "peak_coverage": 0.817,
+      "success_90": false,
+      "success_95": false,
+      "return": -1.95
+    },
+    {
+      "episode_id": 175,
+      "steps": 500,
+      "peak_coverage": 0.7873,
+      "success_90": false,
+      "success_95": false,
+      "return": 19.47
+    },
+    {
+      "episode_id": 176,
+      "steps": 500,
+      "peak_coverage": 0.8088,
+      "success_90": false,
+      "success_95": false,
+      "return": -8.21
+    },
+    {
+      "episode_id": 177,
+      "steps": 500,
+      "peak_coverage": 0.7251,
+      "success_90": false,
+      "success_95": false,
+      "return": 1.97
+    },
+    {
+      "episode_id": 178,
+      "steps": 500,
+      "peak_coverage": 0.8257,
+      "success_90": false,
+      "success_95": false,
+      "return": 12.93
+    },
+    {
+      "episode_id": 179,
+      "steps": 500,
+      "peak_coverage": 0.8945,
+      "success_90": false,
+      "success_95": false,
+      "return": -13.16
+    },
+    {
+      "episode_id": 180,
+      "steps": 500,
+      "peak_coverage": 0.8459,
+      "success_90": false,
+      "success_95": false,
+      "return": -7.22
+    },
+    {
+      "episode_id": 181,
+      "steps": 500,
+      "peak_coverage": 0.5904,
+      "success_90": false,
+      "success_95": false,
+      "return": -22.2
+    },
+    {
+      "episode_id": 182,
+      "steps": 500,
+      "peak_coverage": 0.6916,
+      "success_90": false,
+      "success_95": false,
+      "return": 0.41
+    },
+    {
+      "episode_id": 183,
+      "steps": 500,
+      "peak_coverage": 0.8667,
+      "success_90": false,
+      "success_95": false,
+      "return": 1.5
+    },
+    {
+      "episode_id": 184,
+      "steps": 20,
+      "peak_coverage": 0.972,
+      "success_90": true,
+      "success_95": true,
+      "return": 7.34
+    },
+    {
+      "episode_id": 185,
+      "steps": 500,
+      "peak_coverage": 0.8821,
+      "success_90": false,
+      "success_95": false,
+      "return": -16.33
+    },
+    {
+      "episode_id": 186,
+      "steps": 16,
+      "peak_coverage": 0.9592,
+      "success_90": true,
+      "success_95": true,
+      "return": 7.19
+    },
+    {
+      "episode_id": 187,
+      "steps": 500,
+      "peak_coverage": 0.889,
+      "success_90": false,
+      "success_95": false,
+      "return": -2.75
+    },
+    {
+      "episode_id": 188,
+      "steps": 500,
+      "peak_coverage": 0.7075,
+      "success_90": false,
+      "success_95": false,
+      "return": -29.52
+    },
+    {
+      "episode_id": 189,
+      "steps": 500,
+      "peak_coverage": 0.6896,
+      "success_90": false,
+      "success_95": false,
+      "return": -21.69
+    },
+    {
+      "episode_id": 190,
+      "steps": 500,
+      "peak_coverage": 0.711,
+      "success_90": false,
+      "success_95": false,
+      "return": -7.79
+    },
+    {
+      "episode_id": 191,
+      "steps": 500,
+      "peak_coverage": 0.5901,
+      "success_90": false,
+      "success_95": false,
+      "return": -27.4
+    },
+    {
+      "episode_id": 192,
+      "steps": 500,
+      "peak_coverage": 0.8547,
+      "success_90": false,
+      "success_95": false,
+      "return": 10.98
+    },
+    {
+      "episode_id": 193,
+      "steps": 500,
+      "peak_coverage": 0.8129,
+      "success_90": false,
+      "success_95": false,
+      "return": 7.52
+    },
+    {
+      "episode_id": 194,
+      "steps": 500,
+      "peak_coverage": 0.9127,
+      "success_90": true,
+      "success_95": false,
+      "return": 15.39
+    },
+    {
+      "episode_id": 195,
+      "steps": 500,
+      "peak_coverage": 0.8621,
+      "success_90": false,
+      "success_95": false,
+      "return": 11.49
+    },
+    {
+      "episode_id": 196,
+      "steps": 500,
+      "peak_coverage": 0.836,
+      "success_90": false,
+      "success_95": false,
+      "return": -7.38
+    },
+    {
+      "episode_id": 197,
+      "steps": 500,
+      "peak_coverage": 0.8723,
+      "success_90": false,
+      "success_95": false,
+      "return": -8.33
+    },
+    {
+      "episode_id": 198,
+      "steps": 500,
+      "peak_coverage": 0.8703,
+      "success_90": false,
+      "success_95": false,
+      "return": 8.76
+    },
+    {
+      "episode_id": 199,
+      "steps": 500,
+      "peak_coverage": 0.8091,
+      "success_90": false,
+      "success_95": false,
+      "return": -3.42
+    },
+    {
+      "episode_id": 200,
+      "steps": 500,
+      "peak_coverage": 0.7171,
+      "success_90": false,
+      "success_95": false,
+      "return": -9.09
+    }
+  ]
+}
