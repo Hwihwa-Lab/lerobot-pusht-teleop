@@ -133,20 +133,17 @@ lerobot-pusht-teleop/
 
 ---
 
-## 📖 인용 (Citation)
+## 🔗 오픈소스 허브 및 공식 링크 (Project Links)
 
-```bibtex
-@misc{hwihwalab2026pusht,
-  author = {HWIHWA LAB},
-  title = {LeRobot 2D PushT Interactive Teleoperation Simulator \& Benchmark},
-  year = {2026},
-  publisher = {Hugging Face},
-  journal = {Hugging Face Models and Spaces},
-  howpublished = {\url{https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop}}
-}
-```
+- 🐙 **GitHub 공식 저장소**: [https://github.com/Hwihwa-Lab/lerobot-pusht-teleop](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
+- 🌟 **Hugging Face Spaces (실시간 웹 데모)**: [https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)
+- 🤗 **Hugging Face Model Hub (공식 모델 카드)**: [https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop](https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop)
 
 ---
 
-## 📄 라이선스
-MIT License. Copyright (c) 2026 [HWIHWA LAB](https://github.com/Hwihwa-Lab).
+## 📄 라이선스 (License)
+이 프로젝트는 MIT 라이선스를 따릅니다. 자세한 내용은 [LICENSE](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop/blob/main/LICENSE) 파일을 참조하세요.
+
+---
+
+*Developed and deployed with [LeRobot 2D PushT Teleoperation Cockpit](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop) by **hwihwalab** (HWIHWA LAB).*

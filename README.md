@@ -171,20 +171,17 @@ lerobot-pusht-teleop/
 
 ---
 
-## 📖 Citation
+## 🔗 Open Source Hubs & Project Links
 
-```bibtex
-@misc{hwihwalab2026pusht,
-  author = {HWIHWA LAB},
-  title = {LeRobot 2D PushT Interactive Teleoperation Simulator \& Benchmark},
-  year = {2026},
-  publisher = {Hugging Face},
-  journal = {Hugging Face Models and Spaces},
-  howpublished = {\url{https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop}}
-}
-```
+- 🐙 **GitHub Repository**: [https://github.com/Hwihwa-Lab/lerobot-pusht-teleop](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
+- 🌟 **Hugging Face Spaces (Live Demo)**: [https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)
+- 🤗 **Hugging Face Model Hub**: [https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop](https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop)
 
 ---
 
 ## 📄 License
-MIT License. Copyright (c) 2026 [HWIHWA LAB](https://github.com/Hwihwa-Lab).
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop/blob/main/LICENSE) file for details.
+
+---
+
+*Developed and deployed with [LeRobot 2D PushT Teleoperation Cockpit](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop) by **hwihwalab**.*
