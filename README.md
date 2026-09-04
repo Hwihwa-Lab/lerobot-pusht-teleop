@@ -129,9 +129,8 @@ flowchart TD
 
 ---
 
-## 🕹️ Keyboard Controls & Quick Start
+## 🕹️ Global Hotkeys & In-Cockpit Controls
 
-### 🎮 Global Hotkeys
 | Key | Action | Description |
 | :---: | :--- | :--- |
 | **`Space`** | **Pause / Resume** | Freeze simulation state with neon overlay |
@@ -140,6 +139,8 @@ flowchart TD
 | **`S`** | **Record / Stop** | Start/Stop demonstration recording |
 
 ---
+
+## 🚀 Local Execution & Benchmark Modes
 
 ### 1. Web Interactive Simulator (Browser)
 ```bash
