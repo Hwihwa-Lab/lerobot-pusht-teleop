@@ -10,6 +10,10 @@ import time
 import json
 import glob
 import asyncio
+import subprocess
+import threading
+import webbrowser
+import platform
 from typing import List, Optional, Dict, Any
 
 import uvicorn
@@ -377,7 +381,45 @@ async def websocket_endpoint(websocket: WebSocket):
         manager.disconnect(websocket)
     except Exception as e:
         print(f"[WebSocket Error] {e}")
-        manager.disconnect(websocket)
+def launch_desktop_app(url: str = "http://localhost:8000"):
+    """Launch Standalone Desktop Cockpit App Window (Zero-Dependency Chrome/Edge App Mode)."""
+    time.sleep(1.0)  # Wait for server initialization
+    
+    # 1. Windows: Try Edge App Mode or Chrome App Mode
+    if platform.system() == "Windows":
+        edge_paths = [
+            os.path.expandvars(r"%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"),
+            os.path.expandvars(r"%ProgramFiles%\Microsoft\Edge\Application\msedge.exe"),
+            os.path.expandvars(r"%LocalAppData%\Microsoft\Edge\Application\msedge.exe"),
+        ]
+        chrome_paths = [
+            os.path.expandvars(r"%ProgramFiles%\Google\Chrome\Application\chrome.exe"),
+            os.path.expandvars(r"%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe"),
+            os.path.expandvars(r"%LocalAppData%\Google\Chrome\Application\chrome.exe"),
+        ]
+        
+        for p in edge_paths + chrome_paths:
+            if os.path.exists(p):
+                try:
+                    cmd = [p, f"--app={url}", "--window-size=1380,820", "--window-position=100,50"]
+                    subprocess.Popen(cmd)
+                    print(f"🚀 [Standalone Desktop Cockpit Launched] {p} --app={url}")
+                    return
+                except Exception as e:
+                    print(f"⚠️ App mode launch fallback: {e}")
+                    
+    # Fallback: standard browser
+    print(f"🌐 [Opening Standard Browser] {url}")
+    webbrowser.open(url)
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, log_level="warning")
+    # Launch Standalone Desktop App Window in background thread
+    threading.Thread(target=launch_desktop_app, args=("http://localhost:8000",), daemon=True).start()
+    
+    print(f"==================================================")
+    print(f"🤖 LeRobot 2D PushT Standalone Cockpit Desktop App")
+    print(f"🌐 Local URL: http://localhost:8000 | WebSocket: ws://localhost:8000/ws")
+    print(f"🖥️ Window Mode: Standalone Desktop Cockpit App (Microduck Style)")
+    print(f"==================================================")
+    
+    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")

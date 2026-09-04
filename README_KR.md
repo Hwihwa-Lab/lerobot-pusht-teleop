@@ -121,11 +121,12 @@ flowchart TD
 
 ## 🚀 로컬 실행 및 벤치마크 가이드 (Execution Modes)
 
-### 1. 웹 인터랙티브 시뮬레이터 (브라우저)
+### 1. 단독 데스크톱 앱 콕핏 실행 (Standalone Desktop Cockpit)
 ```bash
 python server.py
+# 또는 PowerShell에서: .\run_desktop.ps1
 ```
-브라우저에서 **[http://localhost:8000](http://localhost:8000)** 접속.
+*실행 즉시 주소창/탭이 없는 전용 데스크톱 관제 창이 자동으로 팝업되며, FastAPI WebSocket 60Hz 백엔드가 동기화됩니다.*
 
 ### 2. 파이썬 Pygame 네이티브 텔레옵
 ```bash

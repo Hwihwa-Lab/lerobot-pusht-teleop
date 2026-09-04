@@ -142,11 +142,12 @@ flowchart TD
 
 ## 🚀 Local Execution & Benchmark Modes
 
-### 1. Web Interactive Simulator (Browser)
+### 1. Standalone Desktop Cockpit (Web Backend + Window App)
 ```bash
 python server.py
+# Or via PowerShell: .\run_desktop.ps1
 ```
-Open **[http://localhost:8000](http://localhost:8000)** in your browser.
+*Automatically launches a dedicated frameless desktop cockpit app window with 60 Hz FastAPI WebSocket physics.*
 
 ### 2. Python Native Pygame Teleop
 ```bash
