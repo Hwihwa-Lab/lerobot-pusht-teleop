@@ -130,7 +130,7 @@ def deploy_model(api: Any, username: str, repo_name: str, token: str, current_di
             )
             print(f"  ✓ {fn} 업로드 완료")
 
-    print(f"🎉 Models 배포 완료: https://huggingface.co/models/{repo_id}")
+    print(f"🎉 Models 배포 완료: https://huggingface.co/{repo_id}")
 
 def deploy():
     print("=" * 68)

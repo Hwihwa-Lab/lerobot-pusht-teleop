@@ -3,6 +3,7 @@ language:
 - en
 - ko
 license: mit
+library_name: lerobot
 tags:
 - robotics
 - lerobot
@@ -16,24 +17,6 @@ tags:
 - diffusion-policy
 - act
 - web-teleop
-pipeline_tag: robotics
-library_name: lerobot
-model-index:
-- name: lerobot-pusht-teleop
-  results:
-  - task:
-      type: robotics
-      name: Robotics Manipulation
-    dataset:
-      name: Hugging Face LeRobot PushT Benchmark
-      type: lerobot/pusht
-    metrics:
-    - type: mean_peak_coverage
-      value: 0.8054
-      name: Mean Peak IoU Overlap (200-Ep Average)
-    - type: physics_throughput
-      value: 174348
-      name: Physics Simulation Throughput (FPS)
 ---
 
 # 🤖 LeRobot 2D PushT // Live Teleoperation Cockpit & Physical AI Benchmark
@@ -41,7 +24,7 @@ model-index:
 [![Language: English](https://img.shields.io/badge/Language-English-blue)](README.md)
 [![Language: 한국어](https://img.shields.io/badge/Language-한국어-green)](README_KR.md)
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Live%20Spaces%20Demo-orange)](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)
-[![Hugging Face Models](https://img.shields.io/badge/🤗%20Hugging%20Face-Model%20Hub-yellow)](https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop)
+[![Hugging Face Models](https://img.shields.io/badge/🤗%20Hugging%20Face-Model%20Hub-yellow)](https://huggingface.co/hwihwalab/lerobot-pusht-teleop)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Framework: LeRobot](https://img.shields.io/badge/LeRobot-HuggingFace-blue.svg)](https://github.com/huggingface/lerobot)
@@ -52,7 +35,7 @@ model-index:
 
 > [!TIP]
 > 🎮 **Try Live in Browser (Zero Install)**: [👉 Open Hugging Face Spaces Live Demo](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)  
-> 📦 **Official Model Hub**: [🤗 hwihwalab/lerobot-pusht-teleop](https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop) | 🐙 **GitHub**: [Hwihwa-Lab/lerobot-pusht-teleop](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
+> 📦 **Official Model Hub**: [🤗 hwihwalab/lerobot-pusht-teleop](https://huggingface.co/hwihwalab/lerobot-pusht-teleop) | 🐙 **GitHub**: [Hwihwa-Lab/lerobot-pusht-teleop](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
 
 ---
 
@@ -202,7 +185,7 @@ lerobot-pusht-teleop/
 
 - 🐙 **GitHub Repository**: [https://github.com/Hwihwa-Lab/lerobot-pusht-teleop](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
 - 🌟 **Hugging Face Spaces (Live Demo)**: [https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)
-- 🤗 **Hugging Face Model Hub**: [https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop](https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop)
+- 🤗 **Hugging Face Model Hub**: [https://huggingface.co/hwihwalab/lerobot-pusht-teleop](https://huggingface.co/hwihwalab/lerobot-pusht-teleop)
 
 ---
 

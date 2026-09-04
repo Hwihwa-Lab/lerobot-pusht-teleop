@@ -3,7 +3,7 @@
 [![Language: English](https://img.shields.io/badge/Language-English-blue)](README.md)
 [![Language: 한국어](https://img.shields.io/badge/Language-한국어-green)](README_KR.md)
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Live%20Spaces%20Demo-orange)](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)
-[![Hugging Face Models](https://img.shields.io/badge/🤗%20Hugging%20Face-Model%20Hub-yellow)](https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop)
+[![Hugging Face Models](https://img.shields.io/badge/🤗%20Hugging%20Face-Model%20Hub-yellow)](https://huggingface.co/hwihwalab/lerobot-pusht-teleop)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Framework: LeRobot](https://img.shields.io/badge/LeRobot-HuggingFace-blue.svg)](https://github.com/huggingface/lerobot)
@@ -14,7 +14,7 @@
 
 > [!TIP]
 > 🎮 **웹 브라우저 무설치 즉시 체험**: [👉 Hugging Face Spaces 라이브 데모 열기](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)  
-> 📦 **공식 모델 허브**: [🤗 hwihwalab/lerobot-pusht-teleop](https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop) | 🐙 **GitHub**: [Hwihwa-Lab/lerobot-pusht-teleop](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
+> 📦 **공식 모델 허브**: [🤗 hwihwalab/lerobot-pusht-teleop](https://huggingface.co/hwihwalab/lerobot-pusht-teleop) | 🐙 **GitHub**: [Hwihwa-Lab/lerobot-pusht-teleop](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
 
 ---
 
