@@ -50,6 +50,33 @@ model-index:
 > **Zero-Dependency 2D Rigid Body Physical AI Simulator, Real-time Mouse Teleoperation Cockpit, and Demonstration Data Collector for the Hugging Face LeRobot PushT Benchmark.**  
 > *[ 🌐 English Documentation ](README.md) | [ 🇰🇷 한국어 매뉴얼 ](README_KR.md) | [ 🎮 Live Interactive Web Demo ](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)*
 
+> [!TIP]
+> 🎮 **Try Live in Browser (Zero Install)**: [👉 Open Hugging Face Spaces Live Demo](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)  
+> 📦 **Official Model Hub**: [🤗 hwihwalab/lerobot-pusht-teleop](https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop) | 🐙 **GitHub**: [Hwihwa-Lab/lerobot-pusht-teleop](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
+
+---
+
+## ⚡ Quick Start: 1-Line Download & Launch
+
+Run the interactive 60 FPS Pygame teleoperation cockpit locally with a single command:
+
+### 🐍 Option 1: Python 1-Liner (Auto-Download & Run)
+```python
+# pip install huggingface_hub pygame
+from huggingface_hub import hf_hub_download
+import os
+
+script = hf_hub_download(repo_id="hwihwalab/lerobot-pusht-teleop", filename="pusht_teleop.py")
+os.system(f"python {script}")
+```
+
+### 💻 Option 2: Hugging Face CLI Download
+```bash
+pip install huggingface_hub pygame fastapi websockets uvicorn
+huggingface-cli download hwihwalab/lerobot-pusht-teleop --local-dir ./lerobot-pusht
+cd ./lerobot-pusht && python pusht_teleop.py
+```
+
 ---
 
 ## 🌟 Model Specifications & 200-Episode Benchmark Performance

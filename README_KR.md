@@ -12,6 +12,33 @@
 > **허깅페이스 LeRobot PushT 벤치마크를 위한 무설치(Zero-Dependency) 2D 강체 피지컬 AI 시뮬레이터, 실시간 마우스 텔레오퍼레이션 콕핏 및 모방학습 데이터 수집기**  
 > *[ 🌐 English Documentation ](README.md) | [ 🇰🇷 한국어 매뉴얼 ](README_KR.md) | [ 🎮 실시간 웹 라이브 데모 ](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)*
 
+> [!TIP]
+> 🎮 **웹 브라우저 무설치 즉시 체험**: [👉 Hugging Face Spaces 라이브 데모 열기](https://huggingface.co/spaces/hwihwalab/lerobot-pusht-teleop)  
+> 📦 **공식 모델 허브**: [🤗 hwihwalab/lerobot-pusht-teleop](https://huggingface.co/models/hwihwalab/lerobot-pusht-teleop) | 🐙 **GitHub**: [Hwihwa-Lab/lerobot-pusht-teleop](https://github.com/Hwihwa-Lab/lerobot-pusht-teleop)
+
+---
+
+## ⚡ 빠른 시작: 1줄 다운로드 & 즉시 실행 (Quick Start)
+
+로컬 환경에서 단 1줄의 명령어로 실시간 60 FPS 텔레오퍼레이션 콕핏을 바로 다운로드하여 실행할 수 있습니다:
+
+### 🐍 방법 1: 파이썬 1줄 다운로드 & 즉시 실행 (가장 추천)
+```python
+# pip install huggingface_hub pygame
+from huggingface_hub import hf_hub_download
+import os
+
+script = hf_hub_download(repo_id="hwihwalab/lerobot-pusht-teleop", filename="pusht_teleop.py")
+os.system(f"python {script}")
+```
+
+### 💻 방법 2: Hugging Face CLI로 전체 저장소 다운로드
+```bash
+pip install huggingface_hub pygame fastapi websockets uvicorn
+huggingface-cli download hwihwalab/lerobot-pusht-teleop --local-dir ./lerobot-pusht
+cd ./lerobot-pusht && python pusht_teleop.py
+```
+
 ---
 
 ## 🌟 모델 사양 및 200회 공식 벤치마크 실측 성능
